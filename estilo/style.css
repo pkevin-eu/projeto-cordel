@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+   --fonte2: "Archivo Black", sans-serif; /*títulos*/
+   --fonte3:"Permanent Marker", cursive; /*Conteúdo*/
+    }
+    
+
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+ }
+
+ header {
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+ 
+ header > h1{
+    padding-top: 35px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /*10% da largura da tela*/
+ }
+
+ header > p {
+    padding-bottom: 35px;
+ }
+
+ header  a, footer  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+ }
+
+ header a:hover, footer a:hover{
+    text-decoration: underline;
+ }
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 70px;
+    font-family: var(--fonte3);
+    font-size: 4.5vw;
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(27, 27, 27);
+    color:white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.66);background-size: cover;/*ajustar a imagem ao tamanho, adaptação*/
+    background-attachment: fixed;/*efeito paralax*/
+}
+
+section.imagem > p {
+    background-color: rgba(39, 30, 30, 0.63);
+    display: inline-block; /*caixa que se adapta ao conteúdo*/
+    padding: 5px 5px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
+   background-image:url(../imagens/background001.jpg);
+   background-position: right center;
+}
+
+section#img02 {
+   background-image:url(../imagens/background002.jpg);
+   background-position:  right center;
+}
+
+ footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+ }
